@@ -10,11 +10,11 @@ function App() {
   return (
     <div className="App">
 
-<Titulo/>
+      <Titulo/>
       <Subtitulo comision='3A' estado={true}></Subtitulo>
       <FormTarea></FormTarea>
     
-      //<HelloWorld text="my friend."></HelloWorld>
+      {/* <HelloWorld text="my friend."></HelloWorld> */}
     </div>
   );
 }
