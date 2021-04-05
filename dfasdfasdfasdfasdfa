@@ -1,0 +1,17 @@
+[33mcommit d8cd6b921b3987a17db269bfb58d041f63bc756d[m[33m ([m[1;36mHEAD -> [m[1;32mejercicio4[m[33m, [m[1;31morigin/ejercicio4[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Alejo-AmeliaPC <alejomartinezgrau@gmail.com>
+Date:   Sat Apr 3 22:50:33 2021 -0300
+
+    problema 4 como lo vimos en clase, fix error por falta de bootstrap
+
+[33mcommit dd00d40075795b013ea5c208aa2d96839af751b1[m
+Author: Alejo-AmeliaPC <alejomartinezgrau@gmail.com>
+Date:   Sat Apr 3 22:32:27 2021 -0300
+
+    Ejercicio 4 original visto en clase, borra tareas por nombre
+
+[33mcommit c110e429866d339404acd8884958a39eeec1fbbd[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Alejo-AmeliaPC <alejomartinezgrau@gmail.com>
+Date:   Sat Apr 3 22:15:09 2021 -0300
+
+    ejercicio 3: Hello world + cambio de state básico

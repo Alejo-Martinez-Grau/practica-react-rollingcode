@@ -1,11 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Lista from "./Lista";
 
 const FormTarea = () => {
   // aqui escribo codigo de js
   // vamos a crear 2 state
+
+  let tareasLS = JSON.parse(localStorage.getItem('listaTareas')); //traigo info de local storage.  
   const [tarea, setTarea] = useState("");
-  const [listaTareas, setListaTareas] = useState([]);
+  const [listaTareas, setListaTareas] = useState(tareasLS);
+
+  //uso del ciclo de vida de un componente
+  useEffect(() => {
+    //aquí va la lógica que quiero ejecutar en el arranque
+    console.log('ejecutando useEffect');
+    if(tareasLS){
+      console.log('aqui quiero actualizar LS')
+      localStorage.setItem('listaTareas', JSON.stringify(listaTareas));
+    }else{
+      console.log('ta seco el local storage, no hay key listaTareas');
+      localStorage.setItem('listaTareas', JSON.stringify([]));
+    }
+
+  }); //msiagrego ,[listaTareas] antes de cerrar el parentesis, los corchetes cuadrados sirve para usar useeffect SOLO en el montaje, escepto los states que estan adentro del corchete.
 
   // const guardarTarea = (e) =>{
   //     // console.log(e.target.value);
